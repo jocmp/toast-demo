@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #4C4845; 
+}
+
+.app-header {
+  background-color: #222;
+  height: 90px;
+  padding-left: 20px;
+  color: white;
+
+  div {
+    display: block;
+    float: left;
+  } 
+
+  a {
+    color: white;
+  }
+}
+
+.app-title {
+  text-align: left;
+
+  h2 {
+    padding-top: 2px;
+    margin-bottom: 4px;
+  }
+
+  span {
+    font-size: 10pt;
+    vertical-align: top;
+  }
+}
+
+.invisible {
+  visibility: hidden;
+}
