@@ -9,7 +9,7 @@ interface ToastProps {
 const Toast = ({ toast, hideToast }: ToastProps) => (
   <div className={ `toast ${toast.className}` }>
     <div className="message">{ toast.text }</div>
-    <div onClick={ hideToast } className="close">X</div>
+    <div onClick={ hideToast } className="close">&times;</div>
   </div>
 )
 

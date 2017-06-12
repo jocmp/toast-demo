@@ -20,15 +20,15 @@ const showToast = (text: string, className: string) => ({
 });
 
 export const showSuccessToast = (text?: string) => (dispatch: any, getState: any): void => {
-  const ToastAction = showToast(text, 'success');
-  dispatch(ToastAction);
-  setTimeout(() => dispatch(hideToast(ToastAction.toast)), 3500);
+  const toastAction = showToast(text, 'success');
+  dispatch(showToast(text, 'success'));;
+  setTimeout(() => dispatch(hideToast(toastAction.toast)), 3500);
 };
 
 export const showErrorToast = (text?: string) => (dispatch: any, getState: any): void => {
-  const ToastAction = showToast(text, 'error');
+  const toastAction = showToast(text, 'error');
   dispatch(showToast(text, 'error'));
-  setTimeout(() => dispatch(hideToast(ToastAction.toast)), 3500);
+  setTimeout(() => dispatch(hideToast(toastAction.toast)), 3500);
 };
 
 export const hideToast = (toast: Type.Toast): ToastAction => ({

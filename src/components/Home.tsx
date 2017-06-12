@@ -18,9 +18,9 @@ const Home = (props: HomeProps) => {
     const { showSuccess, showError, hideToast, toasts } = props;
     return (
         <div className="home-container" >
-            <Toasts toasts={ toasts } hideToast={ hideToast } />
             <button onClick={ () => showError('Too bad.') } className="button error">Show Error Toast</button>
             <button onClick={ () => showSuccess('This was a triumph.') } className="button success">Show Success Toast</button>
+            <Toasts toasts={ toasts } hideToast={ hideToast } />
         </div >
     );
 };
