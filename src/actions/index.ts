@@ -19,9 +19,14 @@ const showToast = (text: string, className: string) => ({
   }
 });
 
+export const hideToast = (toast: Type.Toast): ToastAction => ({
+  type: HIDE_TOAST,
+  toast
+});
+
 export const showSuccessToast = (text?: string) => (dispatch: any, getState: any): void => {
   const toastAction = showToast(text, 'success');
-  dispatch(showToast(text, 'success'));;
+  dispatch(showToast(text, 'success'));
   setTimeout(() => dispatch(hideToast(toastAction.toast)), 3500);
 };
 
@@ -30,8 +35,3 @@ export const showErrorToast = (text?: string) => (dispatch: any, getState: any):
   dispatch(showToast(text, 'error'));
   setTimeout(() => dispatch(hideToast(toastAction.toast)), 3500);
 };
-
-export const hideToast = (toast: Type.Toast): ToastAction => ({
-  type: HIDE_TOAST,
-  toast
-});

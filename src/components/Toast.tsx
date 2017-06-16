@@ -11,6 +11,6 @@ const Toast = ({ toast, hideToast }: ToastProps) => (
     <div className="message">{ toast.text }</div>
     <div onClick={ hideToast } className="close">&times;</div>
   </div>
-)
+);
 
 export default Toast;
