@@ -1,27 +1,23 @@
 import * as React from 'react';
-import { Type } from '../types';
-import Toasts from './Toasts';
+import Toasts from '../containers/toasts-container';
 
-export type HomeProps = HomeStateProps & HomeDispatchProps;
-
-export interface HomeStateProps {
-    toasts: Type.Toast[];
-}
-
-export interface HomeDispatchProps {
+export interface DispatchProps {
     showSuccess: (text: string) => void;
     showError: (text: string) => void;
-    hideToast: (toast: Type.Toast) => any;
 }
 
-const Home = (props: HomeProps) => {
-    const { showSuccess, showError, hideToast, toasts } = props;
+const Home = (props: DispatchProps) => {
+    const { showSuccess, showError } = props;
     return (
-        <div className="home-container" >
+        <div className="home-container">
+            <div className="explanation">
+                <p>Toasts can be dismissed manually by clicking the &times; icon. Toasts will automatically dismiss after 3,500 milliseconds.</p>
+                <p>The Redux state of the application is logged in the Console.</p>
+            </div>
             <button onClick={ () => showError('Too bad.') } className="button error">Show Error Toast</button>
             <button onClick={ () => showSuccess('This was a triumph.') } className="button success">Show Success Toast</button>
-            <Toasts toasts={ toasts } hideToast={ hideToast } />
-        </div >
+            <Toasts />
+        </div>
     );
 };
 

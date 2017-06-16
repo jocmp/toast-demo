@@ -2,7 +2,7 @@ import * as React from 'react';
 import Header from './Header';
 import { Provider } from 'react-redux'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import HomeContainer from '../containers/HomeContainer'
+import HomeContainer from '../containers/home-container';
 import { store } from '../store';
 
 const App = () => (

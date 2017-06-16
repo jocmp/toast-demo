@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders 1`] = `
+<div
+  className="home-container"
+>
+  <button
+    className="button error"
+    onClick={[Function]}
+  >
+    Show Error Toast
+  </button>
+  <button
+    className="button success"
+    onClick={[Function]}
+  >
+    Show Success Toast
+  </button>
+  <Connect(Toasts) />
+</div>
+`;

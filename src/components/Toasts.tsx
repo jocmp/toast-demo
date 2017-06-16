@@ -1,9 +1,14 @@
 import * as React from 'react';
-import Toast from './Toast';
+import Toast from './toast';
 import { Type } from '../types';
 
-interface ToastsProps {
+type ToastsProps = StateProps & DispatchProps;
+
+export interface StateProps {
   toasts: Type.Toast[]
+}
+
+export interface DispatchProps {
   hideToast: (toast: Type.Toast) => any;
 }
 
