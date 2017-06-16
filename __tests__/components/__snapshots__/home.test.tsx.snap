@@ -4,6 +4,16 @@ exports[`Home renders 1`] = `
 <div
   className="home-container"
 >
+  <div
+    className="explanation"
+  >
+    <p>
+      Toasts can be dismissed manually by clicking the × icon. Toasts will automatically dismiss after 3,500 milliseconds.
+    </p>
+    <p>
+      The Redux state of the application is logged in the Console.
+    </p>
+  </div>
   <button
     className="button error"
     onClick={[Function]}

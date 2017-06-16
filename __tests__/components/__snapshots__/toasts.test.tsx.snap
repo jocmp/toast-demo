@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toast renders 1`] = `
+<div
+  className="toast-container"
+>
+  <Toast
+    hideToast={[Function]}
+    toast={
+      Object {
+        "text": "Test message",
+        "timestamp": 1497617358715,
+      }
+    }
+  />
+  <Toast
+    hideToast={[Function]}
+    toast={
+      Object {
+        "text": "Message from another index",
+        "timestamp": 1497617358805,
+      }
+    }
+  />
+</div>
+`;

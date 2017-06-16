@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toast renders 1`] = `
+<div
+  className="toast undefined"
+>
+  <div
+    className="message"
+  >
+    Test message
+  </div>
+  <div
+    className="close"
+    onClick={[Function]}
+  >
+    ×
+  </div>
+</div>
+`;

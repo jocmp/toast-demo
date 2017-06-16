@@ -59,7 +59,8 @@
   "scripts": {
     "start": "webpack-dev-server --content-base ./build --hot --inline --progress --profile --colors",
     "build": "webpack --config webpack.config.js --progress --profile --colors",
-    "test": "jest"
+    "test": "jest",
+    "test-watch": "jest --watch"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js",
