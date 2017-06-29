@@ -1,7 +1,10 @@
 ## React-Redux Toast Demo
 
 ### Getting started
+1. From the command line, run `yarn` in the root directory for dependencies
+2. Run `yarn start` to open a dev server which displays on <http://localhost:8080>
 
+`yarn test` will run snapshot tests.
 
 ### Explanation
 There are several React-Redux components that are important to this demo:
