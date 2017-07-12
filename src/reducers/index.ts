@@ -1,5 +1,3 @@
-import * as _ from 'underscore';
-
 import {
   SHOW_TOAST,
   HIDE_TOAST,
@@ -22,7 +20,7 @@ export const uiReducers = (state: UiState = DEFAULT_STATE, action: ActionType): 
     case HIDE_TOAST:
       return {
         ...state,
-        toasts: _.reject(state.toasts, ((toast: Type.Toast) => toast.timestamp === action.toast.timestamp))
+        toasts: state.toasts.filter((toast: Type.Toast) => toast.timestamp !== action.toast.timestamp)
       }
     case SHOW_TOAST:
       return {

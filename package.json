@@ -20,10 +20,10 @@
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
     "style-loader": "^0.17.0",
-    "underscore": "^1.8.3",
     "url-loader": "^0.5.8"
   },
   "devDependencies": {
+    "@types/enzyme": "^2.8.0",
     "@types/history": "^4.5.1",
     "@types/isomorphic-fetch": "^0.0.34",
     "@types/jest": "^19.2.3",
@@ -36,8 +36,6 @@
     "@types/react-router-dom": "^4.0.4",
     "@types/react-router-redux": "^5.0.1",
     "@types/redux-thunk": "^2.1.0",
-    "@types/enzyme": "^2.8.0",
-    "@types/underscore": "^1.8.1",
     "enzyme": "^2.8.2",
     "enzyme-to-json": "^1.5.1",
     "file-loader": "^0.11.1",
